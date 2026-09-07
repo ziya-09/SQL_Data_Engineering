@@ -1,7 +1,7 @@
 # 🔍 Exploratory Data Analysis w/ SQL: Job Market Analytics
 
 
-![Project 1 Overview](https://github.com/ziya-09/SQL_Data_Engineering/blob/main/Images/1_1_Project1_EDA.png?raw=true)
+![Project 1 Overview](../Images/1_1_Project1_EDA.png)
 
 A SQL project analyzing the data engineer job market using real world job posting data. It demonstrates my ability to **write production-quality analytical SQL, design efficient queries, and turn business questions into data-driven insights**.
 
@@ -14,7 +14,7 @@ A SQL project analyzing the data engineer job market using real world job postin
 
 If you only have a minute, review these:
 
-1. [01_top_demanded_skills.sql](https://github.com/ziya-09/SQL_Data_Engineering/blob/main/1_EDA/01_top_demanded_skills.sql) – demand analysis with multi-table joins
+1. [01_top_demanded_skills.sql](./01_top_demanded_skills.sql) – demand analysis with multi-table joins
 2. [02_top_paying_skills.sql](./02_top_paying_skills.sql) – salary analysis with aggregations
 3. [03_optimal_skills.sql](./03_optimal_skills.sql) – combined demand/salary optimization query
 
@@ -28,7 +28,7 @@ Job market analysts need to answer questions like:
 
 This project analyzes a **data warehouse** built using a star schema design. The warehouse structure consists of:
 
-![Data Warehouse](https://github.com/ziya-09/SQL_Data_Engineering/blob/main/Images/1_2_Data_Warehouse.png?raw=true)
+![Data Warehouse](../Images/1_2_Data_Warehouse.png)
 -   **Fact Table:** `job_postings_fact` - Central table containing job posting details (job titles, locations, salaries, dates, etc.)
 -   **Dimension Tables:**
     -   `company_dim` - Company information linked to job postings
@@ -57,11 +57,11 @@ By querying across these interconnected tables, I extracted insights about skill
 
 ## 🏗 Analysis Overview
 ### Query Structure
-1. **[Top Demanded Skills](.\01_top_demanded_skills.sql)** – Identifies the 10 most in-demand skills for remote data engineer positions
-2. **[Top Paying Skills](.\02_top_paying_skills.sql)** – Analyzes the 25 highest-paying skills with salary and demand metrics
-3. **[Optimal Skills](.\03_optimal_skills.sql)** – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
+1. **[Top Demanded Skills](./01_top_demanded_skills.sql)** – Identifies the 10 most in-demand skills for remote data engineer positions
+2. **[Top Paying Skills](./02_top_paying_skills.sql)** – Analyzes the 25 highest-paying skills with salary and demand metrics
+3. **[Optimal Skills](./03_optimal_skills.sql)** – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
 
-### Key Insights
+###Key Insights
 - 🧠 Core languages: SQL and Python each appear in ~29,000 job postings, making them the most demanded skills
 - ☁️ Cloud platforms: AWS and Azure are critical for modern data engineering roles-
 - 🧱 Infra & tooling: Kubernetes, Docker, and Terraform are associated with premium salaries
